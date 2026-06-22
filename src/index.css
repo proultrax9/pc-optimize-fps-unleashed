@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+@theme {
+  /* Obsidian — original palette, not Sparkle-blue */
+  --color-void: #030304;
+  --color-app-bg: #060608;
+  --color-sidebar: #08080b;
+  --color-surface: #0e0e12;
+  --color-elevated: #14141a;
+  --color-card: #101014;
+  --color-card-hover: #16161d;
+  --color-border: #1c1c26;
+  --color-border-glow: #22d3ee22;
+
+  --color-accent: #22d3ee;
+  --color-accent-dim: #06b6d4;
+  --color-accent-muted: #22d3ee33;
+
+  --color-text: #fafafa;
+  --color-text-secondary: #a1a1aa;
+  --color-muted: #52525b;
+
+  --color-success: #34d399;
+  --color-warning: #fbbf24;
+  --color-danger: #f87171;
+
+  --font-sans: "Inter", "Segoe UI", system-ui, sans-serif;
+  --font-mono: "Cascadia Code", "Consolas", monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: var(--font-sans);
+  background: var(--color-void);
+  color: var(--color-text);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* lightweight background — no grid repaint */
+.app-bg-mesh {
+  background-color: var(--color-app-bg);
+  background-image: radial-gradient(
+    ellipse 80% 50% at 50% -20%,
+    #22d3ee08 0%,
+    transparent 60%
+  );
+}
+
+.glow-accent {
+  box-shadow: 0 0 20px #22d3ee18, inset 0 1px 0 #ffffff08;
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, #22d3ee 0%, #a78bfa 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #27272a;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3f3f46;
+}
