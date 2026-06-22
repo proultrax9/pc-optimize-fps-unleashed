@@ -2,7 +2,7 @@
 
 # FPS Unleashed
 
-![FPS Unleashed — หน้า System Overview](assets/screenshot-overview.png)
+![FPS Unleashed — หน้า System Overview](assets/app-overview.png)
 
 **แอปปรับแต่ง Windows สำหรับประสิทธิภาพการเล่นเกม** — พัฒนาด้วย **Tauri 2**, **React 19** และ **Rust**
 
