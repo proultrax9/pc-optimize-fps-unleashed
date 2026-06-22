@@ -2,6 +2,8 @@
 
 # FPS Unleashed
 
+![FPS Unleashed — System Overview](assets/screenshot-overview.png)
+
 **Windows desktop PC optimizer for gaming performance** — built with **Tauri 2**, **React 19**, and **Rust**.
 
 | | |
