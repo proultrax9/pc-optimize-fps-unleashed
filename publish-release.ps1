@@ -35,20 +35,20 @@ if (-not (git tag -l $Tag)) {
     git push origin $Tag
 }
 
-$notes = @"
-## FPS Unleashed v$Version
+$notes = @'
+## FPS Unleashed v{0}
 
 ### Downloads
-- **FPS Unleashed.exe** — portable (no install)
-- **FPS Unleashed Setup.exe** — installer
-- **FPS Unleashed.msi** — Windows Installer
+- FPS Unleashed.exe (portable)
+- FPS Unleashed Setup.exe (installer)
+- FPS Unleashed.msi (Windows Installer)
 
 ### Highlights
 - 31 reversible tweaks, system scanner, boost presets
 - Expert guides with step verification
 - Rollback + restore points
 - English / Thai UI
-"@
+'@ -f $Version
 
 & $Gh release create $Tag `
     --repo "proultrax9/pc-optimize-fps-unleashed" `
